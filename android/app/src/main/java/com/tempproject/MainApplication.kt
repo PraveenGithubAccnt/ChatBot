@@ -1,4 +1,4 @@
-package com.voiceasst
+package com.tempproject
 
 import android.app.Application
 import com.facebook.react.PackageList
