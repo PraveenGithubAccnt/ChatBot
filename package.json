@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "@react-native-community/cli-platform-android": "^13.6.9",
-    "@react-native-voice/voice": "^3.1.5",
+    "@react-native-voice/voice": "^3.2.4",
     "@react-navigation/native": "^6.1.17",
     "@react-navigation/native-stack": "^6.10.0",
     "nativewind": "^2.0.11",

@@ -25,16 +25,20 @@ export default function HomeScreen() {
     const onSpeechError = (e) => {
       console.log('Speech error handler:', e);
     };
-
+  
     Voice.onSpeechStart = onSpeechStart;
     Voice.onSpeechEnd = onSpeechEnd;
     Voice.onSpeechResults = onSpeechResults;
     Voice.onSpeechError = onSpeechError;
-
+  
     return () => {
-      Voice.removeAllListeners();
+      Voice.onSpeechStart = null;
+      Voice.onSpeechEnd = null;
+      Voice.onSpeechResults = null;
+      Voice.onSpeechError = null;
     };
   }, []);
+  
 
   const startRecording = async () => {
     setRecording(true);
